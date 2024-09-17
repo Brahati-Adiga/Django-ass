@@ -25,5 +25,5 @@ def my_view(request):
     print("View execution started.")
     instance = MyModel.objects.create(name='Test Signal')
     print("View execution finished.")
-    return render(request, 'my_template.html')
+    return render(request, 'index.html')
 
