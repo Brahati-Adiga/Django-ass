@@ -22,4 +22,4 @@ import threading
 def my_view(request):
     print(f"Signal in the thread {threading.current_thread().name}")
     instance = MyModel.objects.create(name='Test Signal')
-    return render(request, 'my_template.html')
+    return render(request, 'index.html')
